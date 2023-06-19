@@ -117,13 +117,16 @@ if __name__ == '__main__':
             'Programming Language :: Python :: 3.5',
             'Programming Language :: Python :: 3.6',
             'Programming Language :: Python :: 3.7',
+            'Programming Language :: Python :: 3.8',
+            'Programming Language :: Python :: 3.9',
+            'Programming Language :: Python :: 3.10',
         ],
         license='GPLv3',
         setup_requires=['pytest-runner'],
         tests_require=['pytest'],
         install_requires=[
             'numpy', 'six', 'terminaltables',
-            'cython', 'opencv-python==4.1.2.30', 'matplotlib',
+            'cython', 'opencv-python==4.7.0.72', 'matplotlib',
             'pycocotools', 'tqdm', 'tensorboardx', 'easydict', 'chumpy',
             'pyyaml', 'future', 'ffmpeg-python', 'dotmap', 'boto3', 'scikit-learn'
         ],
