@@ -184,8 +184,8 @@ if not os.path.exists(os.path.join(opt.out_dir, 'res_2d_images')):
 _, info, _ = get_video_info(opt.video_name)
 video_basename = os.path.basename(opt.video_name).split('.')[0]
 
-savepath = f'./{opt.out_dir}/res_{video_basename}.mp4'
-savepath2d = f'./{opt.out_dir}/res_2d_{video_basename}.mp4'
+savepath = f'{opt.out_dir}/res_{video_basename}.mp4'
+savepath2d = f'{opt.out_dir}/res_2d_{video_basename}.mp4'
 info['savepath'] = savepath
 info['savepath2d'] = savepath2d
 
@@ -425,7 +425,7 @@ for i in tqdm(range(total_img), dynamic_ncols=True):
     write_stream.write(image_vis)
 
 
-res_db_path = os.path.join(f'./{opt.out_dir}/', f'{video_basename}.pt')
+res_db_path = os.path.join(f'{opt.out_dir}/', f'{video_basename}.pt')
 joblib.dump(res_db, res_db_path)
 print('Prediction is saved in:', res_db_path)
 
