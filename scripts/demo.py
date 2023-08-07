@@ -205,7 +205,7 @@ if not write_stream.isOpened():
     # write2d_stream = cv2.VideoWriter(
     #     *[info[k] for k in ['savepath2d', 'fourcc', 'fps', 'frameSize']])
 
-assert write_stream.isOpened(), 'Cannot open video for writing'
+# assert write_stream.isOpened(), 'Cannot open video for writing'
 # assert write2d_stream.isOpened(), 'Cannot open video for writing'
 
 os.system(f'ffmpeg -i {opt.video_name} {opt.out_dir}/raw_images/{video_basename}-%06d.png')
